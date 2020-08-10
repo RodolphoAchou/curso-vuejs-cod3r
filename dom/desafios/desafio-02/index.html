@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/vue"></script>
+    <title>Desafio 2</title>
+</head>
+<body>
+    <div id="desafio">
+        <!-- OK - 1) Exiba um alert quando o botão for clicado -->
+        <div>
+            <button @click="alerta">Exibir Alerta</button>
+        </div>
+        
+        <!-- OK - 2) Escute o evento "keydown" e armazene o valor na propriedade
+            data (dica: event.target.value) -->
+        <div>
+            <input type="text" @keydown="gravaValor">
+            <p>{{ valor }}</p>
+        </div>
+        
+        <!-- OK - 3) Ajuste o exemplo 2 para disparar o evento "keydown" somente
+            quando a tecla for ENTER -->
+        <div>
+            <input type="text" @keydown.enter="gravaValor">
+            <p>{{ valor }}</p>
+        </div>
+    </div>
+<script src="app.js"></script>
+</body>
+</html>
