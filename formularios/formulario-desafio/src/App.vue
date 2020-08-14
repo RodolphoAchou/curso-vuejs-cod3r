@@ -54,7 +54,7 @@
 				<Rotulo nome="Armazenar Dados?">
 					<span>{{ armazenarDados }}</span>
 				</Rotulo>
-				<NomeCompleto />>
+				<NomeCompleto :nome="nome"/>
 			</div>
 		</div>
 	</div>
