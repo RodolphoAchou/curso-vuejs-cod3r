@@ -9,7 +9,7 @@ export default {
             if (record) {
                 record.quantity += quantity
             } else {
-                state.stock.push({
+                state.stocks.push({
                     id: stockId,
                     quantity: quantity
                 })
@@ -21,7 +21,7 @@ export default {
             if (record.quantity > quantity) {
                 record.quantity -= quantity
             } else {
-                state.stock.splice(state.stocks.indexOf(record), 1)
+                state.stocks.splice(state.stocks.indexOf(record), 1)
             }
 
             state.funds += stockPrice  * quantity

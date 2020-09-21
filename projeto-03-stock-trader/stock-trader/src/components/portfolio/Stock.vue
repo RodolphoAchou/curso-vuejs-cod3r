@@ -28,7 +28,7 @@ export default {
         }
     },
     methods: {
-        buyStock() {
+        sellStock() {
             const order = {
                 stockId: this.stock.id,
                 stockPrice: this.stock.price,
