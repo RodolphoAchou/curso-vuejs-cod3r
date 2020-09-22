@@ -30,7 +30,7 @@
             </v-menu>
             <v-layout align-center>
                 <span class="text-uppercase grey--text text--darken-2">
-                    <!-- Saldo: {{ funds | currency }} -->
+                    Saldo: {{ funds | currency }}
                 </span>
             </v-layout>
         </v-toolbar-items>
@@ -39,7 +39,11 @@
 
 <script>
 export default {
-    
+    computed: {
+        funds () {
+            return this.$store.getters.funds
+        }
+    }
 }
 </script>
 
