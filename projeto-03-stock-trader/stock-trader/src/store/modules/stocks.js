@@ -5,7 +5,7 @@ export default {
         stocks: []
     },
     mutations: {
-        setStock(state, stocks) {
+        setStocks(state, stocks) {
             state.stocks = stocks
         },
         randomizeStocks(state){
@@ -20,7 +20,7 @@ export default {
             commit('buyStock', order)
         },
         initStocks({ commit }){
-            commit('setStock', stocks)
+            commit('setStocks', stocks)
         },
         randomizeStocks({ commit }){
             commit('randomizeStocks')

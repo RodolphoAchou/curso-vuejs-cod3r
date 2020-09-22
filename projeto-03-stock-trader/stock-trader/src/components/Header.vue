@@ -44,7 +44,7 @@ export default {
         }
     },
     methods: {
-        ...mapActions(['randomizeStocks']),
+        ...mapActions(['randomizeStocks', 'loadData']),
         endDay() {
             this.randomizeStocks()
         },
@@ -53,7 +53,7 @@ export default {
             this.$http.put('data.json', { funds, stockPortfolio, stocks })
         },
         loadDataLocal() {
-
+            this.loadData()
         }  
     }
 }
