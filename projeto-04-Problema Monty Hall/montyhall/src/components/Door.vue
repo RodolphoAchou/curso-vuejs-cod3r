@@ -50,6 +50,7 @@ export default {
     font-size: 3rem;
     display: flex;
     justify-content: center;
+    margin-bottom: 20px;
 }
 .door-frame {
     position: absolute;
